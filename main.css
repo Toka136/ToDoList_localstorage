@@ -84,6 +84,7 @@
     background-color: white;
     border-radius: 20px;
     margin-left: 20px;
+    position: relative;
 }
 .maindiv p
 {
@@ -102,14 +103,67 @@
     align-items: center;
     justify-content: center;
 }
+.alert
+{
+    background-color: white;
+    padding: 5px;
+    border-radius: 2px;
+    position: absolute;
+    bottom: -125px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.356);
+}
+.hide-alert
+{
+    display: none;
+}
+.alert .buttons
+{
+    margin-top: 20px;
+   text-align: end;
+}
+.alert .buttons button
+{
+    outline: none;
+    border: none;
+    margin-right: 15px;
+    font-size: 20px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.356);
+}
+.alert .buttons button:nth-child(1)
+{
+    color: #1b911b;
+}
+.alert .buttons button:nth-child(2)
+{
+    color: #f44336;
+}
+.alert p
+{
+    margin-top: 10px;
+    /* width: 80%; */
+    align-items: center;
+}
 .true i
-,.dele
+,.dele,
+.edit,
+.iconstwo,
+.warn
 {
     font-size: 20px;
     background-color: white;
     outline: none;
     border: none;
     cursor: pointer;
+}
+.warn
+{
+    color: #c4c40f;
 }
 .line
 {
@@ -118,6 +172,13 @@
 .sign i
 {
     color: #ff5722;
+}
+@media(max-width:900px)
+{
+    .alert
+    {
+        bottom: -161px;
+    }
 }
 @media (max-width:600px)
 {
@@ -145,4 +206,8 @@
 {
     padding: 10px 20px;
 }
+}
+.trans
+{
+    cursor: pointer;
 }
