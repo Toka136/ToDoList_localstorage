@@ -173,13 +173,6 @@
 {
     color: #ff5722;
 }
-@media(max-width:900px)
-{
-    .alert
-    {
-        bottom: -161px;
-    }
-}
 @media (max-width:600px)
 {
     .container
